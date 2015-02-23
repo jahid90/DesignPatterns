@@ -43,5 +43,14 @@ public class WeatherStation {
                 }
             }
         }).start();
+
+        try {
+            Thread.sleep(8000);
+        }
+        catch (Exception e) {
+            // do something here
+        }
+
+        weatherData.removeObserver(statisticsDisplay);
     }
 }
